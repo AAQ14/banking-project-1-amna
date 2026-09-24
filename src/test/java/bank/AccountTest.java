@@ -17,7 +17,6 @@ class AccountTest {
 
     @BeforeEach
     void setUp() {
-        // 7-argument constructor: doesn't touch the id counter or any file
         account = new Account(1, "Checking", 500.00, 0, 0.0, true, "Mastercard");
     }
 
