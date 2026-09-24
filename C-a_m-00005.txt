@@ -1,0 +1,2 @@
+ACCOUNT,A-00005,Saving,-99125.0,1,35.0,true,Titanium
+ACCOUNT,A-00006,Checking,-115.0,1,35.0,true,Mastercard

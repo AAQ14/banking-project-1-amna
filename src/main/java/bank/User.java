@@ -82,15 +82,11 @@ public abstract class User {
         FileReader fr = new FileReader("data.txt");
 
         BufferedReader br = new BufferedReader(fr);
-//        Stream<String> stream = Files.lines(Path.of("data.txt"));
-//        stream.forEach(System.out::println);
         String line = br.readLine();
         String lastLine = null;
 
         while(line!=null){
-            System.out.println(line);
             lastLine = line;
-            System.out.println("this is that last line: " + lastLine);
             line= br.readLine();
         }
 

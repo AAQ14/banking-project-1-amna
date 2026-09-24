@@ -1,2 +1,0 @@
-ACCOUNT,A-00001,Saving,3000.0,0,0.0,true
-ACCOUNT,A-00004,Checking,0.0,0,0.0,true

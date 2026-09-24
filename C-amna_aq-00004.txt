@@ -1,0 +1,2 @@
+ACCOUNT,A-00003,Saving,1.0,0,0.0,true,Mastercard
+ACCOUNT,A-00004,Checking,90.0,0,0.0,true,Mastercard

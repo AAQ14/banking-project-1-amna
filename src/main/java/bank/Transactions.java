@@ -91,12 +91,12 @@ public class Transactions{
             }
         }
         fromAccount.balance -=amount;
-        System.out.println("FROM ID: " + fromAccount.getAccountId());
-        System.out.println("FROM BALANCE: " + fromAccount.getBalance());
+//        System.out.println("FROM ID: " + fromAccount.getAccountId());
+//        System.out.println("FROM BALANCE: " + fromAccount.getBalance());
         FileManager.updateAccounts(fromCustomer, fromAccount);
-        toAccount.balance += amount;
-        System.out.println("TO ID: " + toAccount.getAccountId());
-        System.out.println("TO BALANCE: " + toAccount.getBalance());
+        toAccount.setBalance(toAccount.getBalance()+amount);
+//        System.out.println("TO ID: " + toAccount.getAccountId());
+//        System.out.println("TO BALANCE: " + toAccount.getBalance());
         FileManager.updateAccounts(toCustomer, toAccount);
         Transaction trans = new Transaction("Transfer", fromAccount.getBalance() ,amount,   String.format("A-%05d", fromAccount.getAccountId()), String.format("A-%05d", toAccount.getAccountId()), LocalDate.now(), LocalTime.now());
         FileManager.addTransaction(fromCustomer, trans);
