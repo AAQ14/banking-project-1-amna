@@ -220,7 +220,7 @@ public class Services {
         boolean running = true;
         while (running){
             System.out.println("Banker services");
-            System.out.println("1. Add new customer");
+            System.out.println("1. Add new user");
             System.out.println("2. Logout");
             int choice =readInt();
 
